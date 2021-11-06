@@ -19,6 +19,12 @@ module does and how it does it.
 3. Implement your logic in the in the main.tf, variables.tf, and outputs.tf
 4. Use releases/tags to manage release versions of your module
 
+## Description
+
+Description of module
+
+**Note:** This module follows the Terraform conventions regarding how provider configuration is defined within the Terraform template and passed into the module - https://www.terraform.io/docs/language/modules/develop/providers.html. The default provider configuration flows through to the module. If different configuration is required for a module, it can be explicitly passed in the `providers` block of the module - https://www.terraform.io/docs/language/modules/develop/providers.html#passing-providers-explicitly.
+
 ## Software dependencies
 
 The module depends on the following software components:
@@ -45,7 +51,7 @@ This module makes use of the output from other modules:
 
 ```hcl-terraform
 module "dev_tools_argocd" {
-  source = "github.com/ibm-garage-cloud/terraform-tools-argocd.git?ref=v1.0.0"
+  source = "github.com/cloud-native-toolkit/terraform-tools-argocd.git"
 
   cluster_config_file = module.dev_cluster.config_file_path
   cluster_type        = module.dev_cluster.type

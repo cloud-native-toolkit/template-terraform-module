@@ -1,1 +1,3 @@
-# Starter kit for a Terraform module
+# Module metadata
+
+[Metadata definition](./index.yaml)

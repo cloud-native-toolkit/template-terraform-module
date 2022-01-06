@@ -5,10 +5,7 @@ tags:
     - tools
     - devops
 versions:
-- platforms:
-    - kubernetes
-    - ocp3
-    - ocp4
+- platforms: []
 #  providers:
 #    - name: ibm
 #      source: "ibm-cloud/ibm"
@@ -23,10 +20,6 @@ versions:
 #      refs:
 #        - source: github.com/ibm-garage-cloud/terraform-k8s-namespace
 #          version: ">= 2.1.0"
-#    - id: dashboard
-#      refs:
-#        - source: github.com/ibm-garage-cloud/terraform-k8s-dashboard
-#          version: ">= 1.6.0"
   variables: []
 #    - name: cluster_type
 #      moduleRef:
@@ -48,8 +41,3 @@ versions:
 #      moduleRef:
 #        id: namespace
 #        output: name
-#        discriminator: tools
-#    - name: icon_url
-#      moduleRef:
-#        id: dashboard
-#        output: base_icon_url
